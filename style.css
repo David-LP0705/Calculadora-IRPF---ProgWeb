@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7a1f1f;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px;
+  width: 320px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#btnCalcular {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+#btnLimpar {
+  background-color: #ccc;
+  border: none;
+}
+
+.resultado {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.resultado p {
+  margin: 6px 0;
+}
+
+.informativo {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.informativo h3 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.informativo table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.informativo th, .informativo td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+.informativo th {
+  background-color: #7a1f1f;
+  color: white;
+}

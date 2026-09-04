@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de IRPF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Calculadora de IRPF</h2>
+  <p>Referência: tabela mensal janeiro/2024</p>
+
+  <input type="number" id="salario" placeholder="Digite o salário mensal (R$)">
+
+  <div>
+    <button id="btnCalcular" onclick="calcular()">Calcular</button>
+    <button id="btnLimpar" onclick="limpar()">Limpar</button>
+  </div>
+
+  <div class="resultado" id="resultado" style="display:none;">
+    <p><strong>IRPF a recolher:</strong> R$ <span id="valorIR"></span></p>
+    <p><strong>Alíquota efetiva:</strong> <span id="valorAliquota"></span>%</p>
+  </div>
+
+  <div class="informativo">
+    <h3>Tabela de faixas (mensal)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Salário</th>
+          <th>Alíquota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Até R$ 2.112,00</td>
+          <td>Isento</td>
+        </tr>
+        <tr>
+          <td>De R$ 2.112,01 até R$ 2.826,65</td>
+          <td>7,5%</td>
+        </tr>
+        <tr>
+          <td>De R$ 2.826,66 até R$ 3.751,05</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>De R$ 3.751,06 até R$ 4.664,68</td>
+          <td>22,5%</td>
+        </tr>
+        <tr>
+          <td>Acima de R$ 4.664,68</td>
+          <td>27,5%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
